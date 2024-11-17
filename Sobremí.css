@@ -1,0 +1,78 @@
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 50vh; /* Aumentar la altura para permitir el desplazamiento */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000;
+  }
+   /* Menú de navegación */
+   nav {
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  /* Estilo para el menú de navegación */
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px 0;
+    text-align: center;
+  }
+  /* Estilo para los enlaces del menú */
+  nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+  }
+  /* Estilo para el menú de navegación */
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+  }
+  /* Fin del menú de navegación */
+  nav ul li a:hover {
+    background-color: #555;
+  }
+   /* Estilo para las secciones */
+   section {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    text-size-adjust: 12px;
+    margin: 300px;
+  }
+  /* Estilo para las secciones h2 */
+  section h2 {
+    font-size: 2.5em;
+    text-align: center;
+  }
+  #rcorners1 {
+    border-radius: 30px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 30px;
+    background: #ffffff;
+    padding: 20px;
+    width: 600px;
+    height: 250px;
+    text-align: center;
+  }
+  .banner {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /* Estilo para el contenido */
+  .logo {
+    width: 700px; /* Tamaño del logo */
+    margin-top: 1050px;
+
+  }

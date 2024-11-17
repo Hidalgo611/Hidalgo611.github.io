@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página de Inicio</title>
+  <link rel="stylesheet" href="Index.css">
+</head>
+<body>
+
+  <!-- Header con imagen de fondo -->
+  <header>
+
+    <div class="banner">
+        <h1>Marcos Hidalgo Beleña</h1>
+      <img src="logo.png" alt="Logo" class="logo">
+      <div class="texto-centro">
+      </div>
+    </div>
+  </header>
+  <h1>Formulario de Contacto</h1>
+<p class="message">¿Quieres contratarme? ¡Hablemos!</p>
+  <form>
+    <label for="name">Nombre:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Correo Electrónico:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="message">Mensaje:</label>
+    <textarea id="message" name="message" rows="4" required></textarea>
+
+    <button type="submit">Enviar</button>
+</form>
+  <!-- Menú de navegación -->
+  <nav>
+    <ul>
+      <li><a href="Sobremí.html">Sobre mí</a></li>
+      <li><a href="Galeriadeproyectos.html">Galería de proyectos</a></li>
+      <li><a href="Habilidadesyconocimientos.html">Habilidades y conocimientos</a></li>
+    </ul>
+  </nav>
+
+  <!-- Div sobre el uso de cookies -->
+  <div class="cookie-message" id="cookieMessage">
+    Este sitio utiliza cookies para mejorar la experiencia del usuario.
+    <button id="acceptButton">Aceptar</button>
+</div>
+
+<script>
+    document.getElementById('acceptButton').addEventListener('click', function() {
+        var message = document.getElementById('cookieMessage');
+        message.style.transition = "opacity 0.5s ease";
+        message.style.opacity = 0;
+        setTimeout(function() {
+            message.style.display = 'none';
+        }, 5000);
+    });
+</script>
+<footer>
+  © 2024 Marcos Hidalgo Beleña
+</footer>
+</body>
+</html>
